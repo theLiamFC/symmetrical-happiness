@@ -58,9 +58,18 @@ def way_2_print2(event):
     my_strings[1] = string2 #storing string 2 in array
     print('"',string2, '" loaded into my_strings array')
 
+def way_2_print3(event):
+    global my_strings #gets my my_strings array
+    string2 = "FOOTBALL"
+    my_strings[1] = string2 #storing string 2 in array
+    print(my_strings)
+
 #linking
 button_2_python = document.getElementById('my_button3_id') #gets button from html
 button_2_python.onclick = way_2_print2 #calls function 'way_2_print' when button is clicked
+
+button_3_python = document.getElementById('my_button4_id') #gets button from html
+button_3_python.onclick = way_2_print3 #calls function 'way_2_print' when button is clicked
 
 
 
