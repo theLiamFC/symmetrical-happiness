@@ -52,13 +52,15 @@ button_2_python.onclick = way_2_print #calls function 'way_2_print' when button 
 **************************************Your Function below (USE 2ND WAY)*************************************************
 
 '''
-@when("click", "#my_button3_id")
-async def way_3_print(event): 
+def way_2_print2(event):
     global my_strings #gets my my_strings array
-    string3 = 'FOOT BALL'
-    my_strings[0] = string3 #storing string 1 in array
-    print('"',string3, '" loaded into my_strings array')
+    string2 = "FOOTBALL"
+    my_strings[1] = string2 #storing string 2 in array
+    print('"',string2, '" loaded into my_strings array')
 
+#linking
+button_2_python = document.getElementById('my_button3_id') #gets button from html
+button_2_python.onclick = way_2_print2 #calls function 'way_2_print' when button is clicked
 
 
 
