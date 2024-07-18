@@ -52,13 +52,12 @@ button_2_python.onclick = way_2_print #calls function 'way_2_print' when button 
 **************************************Your Function below (USE 2ND WAY)*************************************************
 
 '''
-def your_function_here(event):
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    pass #delete this 
-   
+@when("click", "#my_button3_id")
+async def way_3_print(event): 
+    global my_strings #gets my my_strings array
+    string3 = 'FOOT BALL'
+    my_strings[0] = string3 #storing string 1 in array
+    print('"',string3, '" loaded into my_strings array')
 
 
 
